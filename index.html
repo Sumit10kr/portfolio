@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8de34a170c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i> 
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <br><span>Sumit Kumar</span> <br> From India</h1>
+            </div>
+        </div>
+    </div>
+    <!-------------------about------------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+
+                </div>
+                <div class="about-col-2">
+                   <h1 class="sub-title">About me</h1>
+                   <p>As a versatile computer science graduate, I bring a blend of technical proficiency, problem-solving skills, and a passion for empowering to excel. My journey in academia and professional pursuits has been dedicated to honing skills essential for success in software development engineering.</p>
+                   <div class="tab-titles">
+                      <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                      <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                      <p class="tab-links" onclick="opentab('Education')">Education</p>
+                   </div>
+                   <div class="tab-contents active-tab" id="skills">
+                      <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                        <li><span>Web Development</span><br>Web App Development</li>
+                        <li><span>App Development</span><br>Building Android/IOS App</li>
+
+                      </ul>
+                   </div>
+                   <div class="tab-contents" id="Experience">
+                    <ul>
+                      <li><span>Fresher</span><br></li>
+                      <li><span></span><br></li>
+                      <li><span></span><br></li>
+
+                    </ul>
+                 </div>
+                 <div class="tab-contents" id="Education">
+                    <ul>
+                      <li><span>B.Tech</span><br>Computer Science and Engineering</li>
+                      <li><span>College</span><br>Narula Institute of Technology</li>
+                      <li><span>Duration</span><br>2019-2023</li>
+
+                    </ul>
+                 </div>
+                </div>
+            </div>           
+        </div>
+    </div>
+<!-----------------services---------------------------->
+    <div id="services">
+        <div class="container">
+             <h1 class="sub-title">My services</h1>
+             <div class="services-list" >
+                <div>
+                    <i class="fa-solid fa-laptop-code" style="color: #e3e7ed font-size=30px;"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam libero porro ullam nemo sit, pariatur eaque reiciendis cum obcaecati praesentium quod ipsa odio aliquid quo alias aperiam facere ut beatae.</p>
+                    <a href="#">learn more</a>
+
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop" style="color: #e5ebf5;"></i>
+                    <h2>UI/UX</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam libero porro ullam nemo sit, pariatur eaque reiciendis cum obcaecati praesentium quod ipsa odio aliquid quo alias aperiam facere ut beatae.</p>
+                    <a href="#">learn more</a>
+                    
+                </div>
+                <div>
+                    <i class="fa-brands fa-android"></i>
+                    <h2>App Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam libero porro ullam nemo sit, pariatur eaque reiciendis cum obcaecati praesentium quod ipsa odio aliquid quo alias aperiam facere ut beatae.</p>
+                    <a href="#">learn more</a>
+            
+                </div>
+
+             </div>
+        </div>
+    </div>
+<!--------------------portfolio---------------------------------------->
+<div id="portfolio">
+    <div class="container">
+         <h1 class="sub-title">My Work</h1>
+         <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you to the talented people around the world.
+                        Download it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-square-arrow-up-right fa-beat" style="color: whitesmoke;"></i></a>
+                    </p>
+                </div>
+                
+                
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>The app connects you to the talented people around the world.
+                        Download it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-square-arrow-up-right fa-beat" style="color: whitesmoke;"></i></a>
+                    </p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>The app connects you to the talented people around the world.
+                        Download it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-square-arrow-up-right fa-beat" style="color: whitesmoke;"></i></a>
+                    </p>
+                </div>
+            </div>
+         </div>
+         <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!-----------------------------------contact------------------------------------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-envelope fa-bounce" style="color: #0a5d6b;"></i>sumit.10kr@gmai.com</p>
+                <p><i class="fa-solid fa-phone fa-bounce" style="color: #4287ff;"></i>8102114367</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-square-facebook fa-beat-fade" style="color: #0b61f4;"></i></a>
+                    <a href=""><i class="fa-brands fa-square-x-twitter fa-beat-fade" style="color: white;"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin fa-beat-fade" style="color: #015efe;"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram fa-beat-fade" style="color: #ff0a60;"></i></a>
+                </div>
+                    <a href="" class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+
+                </form>
+                <span id="msg">Hello</span>
+            </div>
+        </div>
+
+    </div>
+    <div class="copyright">
+        <p><i class="fa-regular fa-copyright"></i>copyright -Made with <i class="fa-solid fa-heart" style="color: #e00000;"></i> by Sumit Kumar.</p>
+    </div>
+
+
+</div>
+
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname)
+    {
+        for(tablink of tablinks)
+        {
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents)
+        {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu=document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right="0";
+
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+
+<!--<form name="submit-to-google-sheet">
+    <input name="email" type="email" placeholder="Email" required>
+    <button type="submit">Send</button>
+  </form>-->
+  
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxN93OQuBIFySL6SE-nlncFzzswPi_YQ17eRowHAVBgEtZVnIsOuQLx9sDzA9EaFJveKA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg= document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{
+            msg.innerHTML= "Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+            
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
